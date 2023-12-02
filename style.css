@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code:wght@300;400&display=swap');
+
+:root{ 
+    --fonttittle: 'Bebas Neue', sans-serif;
+    --fonttext:  'Fira Code', monospace;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    height: 100vh;
+    background-image: url(imagens/background.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonttittle);
+    font-size: 1.2em;
+    background-color: rgba(0,0,0,0.1);
+    background-blend-mode: color;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+#main_container{
+    width: 400px;
+    height: 400px;
+    background: url(imagens/background2.webp) no-repeat;
+    background-size: 100vw 100vh;
+    border-radius: 40px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    background-attachment: fixed;
+   margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calcular_info{
+    color: #93A603;
+    background-color: #F2F2F2;
+    font-family: var(--fonttext);
+    font-size: small;
+    border-radius: 0;
+    
+}
+details{
+    color: #93A603;
+    background-color: #F2F2F2;
+    position: absolute;
+    font-family: var(--fonttext);
+    font-size: small;
+    border-radius: 0;
+    bottom: 10px;
+    left: 10px;
+    width: 200px;
+}
+
+details > p {
+    color: black;
+}
+
+details > summary{
+    list-style: none;
+
+}
+
+
+h2{
+    text-align: center;
+    padding: 20px;
+    color: #F20530;
+    background-color: #F2F2F2;
+    box-shadow: 0px 8px 1px;
+}
+
+p{
+    color: #F20530;
+    
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+
+}
+
+input{
+    border: none;
+    height: 1em;
+    width: 4em;
+    border: 2px solid rgba(0,0,0,0.6);
+    border-radius: 20px;
+    text-align: center;
+    font-family: var(--fonttext);
+}
+
+button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #93A603;
+    color: white;
+    font-family: var(--fonttext);
+   
+}
+
+
+button:hover{
+    background-color: #D97904;
+
+}
+
+
+i{
+    font-size: 2em;
+}
+
+#calcular{
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.calcular_container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    
+}
+
+#res, #res3{
+    background-color: white;
+    height: 80px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  
+}
+
+.img_container{
+    background-color: #F2F2F2;
+    border-radius: 40px;
+}
+
+.img_container > img{ 
+
+    width: 100px;
+
+}
+
+
+.mensagem{
+    color: #F20530;
+    border: 1px solid ;
+    border-radius: 30px;
+}
+
+#img >img{
+    width: 100px;
+    position: absolute;
+    left: 50%;
+
+}
+
+.mensagem >p {
+    padding-left: 30px;
+}
+
+.img_imc{
+  width: 100px;
+}
+
+#modal > button {
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+}
+
+#modal > img{
+        position: absolute;
+        width: 65%;
+        height: 65%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        border-radius: 10px;
+        border: 5px solid #F20530;
+      
+
+}
+
+.desapear{
+   display: none !important;
+}

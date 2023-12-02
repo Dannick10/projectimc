@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculo IMC</title>
+</head>
+<body>
+
+
+  
+  <div id="modal">
+
+    <button id="btn_modal">Indices de massas <i class="fa-solid fa-arrow-pointer"></i>
+     </button>
+    
+   
+    <img class="desapear" id="modal_img" " src="imagens/o-indice-de-massa-corporal-imc-e-impreciso-e-enganoso.png" alt="">
+
+  
+  </div>
+
+
+
+
+
+  <main id="main_container" class="one">
+    
+    <h2>Calculo de IMC</h2>
+
+
+
+          <div class="calcular_info">
+            <p>
+              Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
+                  
+       
+          </div>
+        
+    
+    <div id="calcular">
+
+
+        <div class="calcular_container">
+
+            <p>Altura:</p>
+            <input type="number" name="txaltura" id="txaltura" step="0.1">
+
+       
+
+      
+
+            <p>Peso: </p>
+            <input type="number" name="txpeso" id="txpeso"  step="0.1">
+
+    
+
+    
+          </div>
+        </div>
+        <button id="btn_enviar">Enviar</button>
+
+
+  </main>
+
+
+  <section id="main_container" class="desapear">
+    <div id="calcular" class="img_container">
+
+      <div id="img"><img src="https://b.kisscc0.com/20180705/tfe/kisscc0-human-body-drawing-human-anatomy-art-computer-icon-low-poly-human-male-5b3db6a41d2741.0252113915307711081194.png" alt="">
+      
+  
+        <p class="alt_print">Altura: </p>
+        <p class="pes_print">Peso: </p>
+        <p id="resposta">IMC: </p>
+
+  
+      <div id="res3" class="mensagem">
+        <i class="fa-solid fa-message"></i>
+        <p id="res2"> </p>
+      </div>    
+    
+      </div>  
+    </div>
+    <button id="voltar">Voltar</button>
+    
+
+
+  <script src="https://kit.fontawesome.com/e98b48dcc9.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
